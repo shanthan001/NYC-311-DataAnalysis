@@ -21,12 +21,6 @@ This project involves analyzing the NYC 311 service request dataset to gain insi
 3. **Categorical Feature Engineering**: Continuous features with irregular cardinality will be treated as categorical if appropriate. Rare categories in high-cardinality categorical features will be combined to reduce complexity.
 4. **Missing Values Treatment**: Investigate the reasons for missing values. Features with extensive missing values that are not critical will be omitted, while important features will be imputed with appropriate statistical measures.
 
-## Distribution of Complaint Types
-
-The bar chart visualizes the top 10 complaint types in the dataset, providing insights into the most frequent issues reported by residents.
-
-![Top 10 Complaint Types](path/to/your/image1.png)
-
 ## Handling Outliers
 
 Outliers in the data are identified and treated using statistical methods. Various techniques such as capping, transformation, or removal are considered based on the analysis.
@@ -51,25 +45,45 @@ Various visualizations are used throughout the notebook to illustrate the distri
 
 The bar chart below shows the distribution of the top 10 complaint types reported in the NYC 311 dataset:
 
-![Top 10 Complaint Types](path/to/your/image1.png)
+![Top 10 Complaint Types](Complaint_Types.png)
 
-### Outlier Treatment
+### Complaints over time
 
-The box plot below demonstrates the effect of outlier treatment on a particular feature:
+The bar chart visualizes the number of complaints received each month.
 
-![Outlier Treatment](path/to/your/image2.png)
+![Complaints over time - Month](Month.png)
 
-### Feature Normalization
+![Complaints over time - Day](Day.png)
 
-The histogram below shows the distribution of a feature before and after normalization:
+### Distribution of Complaints by Borough
 
-![Feature Normalization](path/to/your/image3.png)
+The bar chart visualizes the number of complaints received from different boroughs.
 
-### Missing Values
+![Borough](Borough.png)
 
-The heatmap below illustrates the presence of missing values in the dataset:
+### Status of Complaints
 
-![Missing Values Heatmap](path/to/your/image4.png)
+The bar chart visualizes the distribution of complaints based on their status.
+
+![Complaint Status](Complaint_status.png)
+
+### Heatmap of Complaints
+
+The included html file contains the heatmap of Complaints
+
+[NYC 311 complaints heatmap](heatmap_complaints.html)
+
+### Analysis of Complaint Types by Borough
+
+The heatmap visualizes the distribution of different types of complaints across various boroughs. The intensity of the color represents the number of complaints, with darker colors indicating fewer complaints and lighter colors indicating more complaints.
+
+![Complaint Types by Borough](Borough_Analysis.png)
+
+### Time Series Analysis
+
+The line graph visualizes the number of complaints received over time, specifically from March 2015 to December 2015.
+
+![Time Series Analysis](Time_Series.png)
 
 ## Getting Started
 
